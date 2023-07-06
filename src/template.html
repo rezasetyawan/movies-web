@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Movies</title>
+</head>
+
+<body>
+    <header>
+        <app-bar></app-bar>
+    </header>
+    <main>
+        <form id="search-container" class="search-container">
+            <input placeholder="Search movie" id="searchElement" type="search">
+            <button id="searchButtonElement" type="submit">Search</button>
+        </form>
+        
+        <div id="movie-list"></div>
+    </main>
+    <footer>
+        <div class="pagination">
+            <span class="page-button" id="prev">Previous Page</span>
+            <span id="page">1</span>
+            <span class="page-button" id="next">Next Page</span>
+        </div>
+    </footer>
+</body>
+
+</html>

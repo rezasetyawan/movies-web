@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import './movie-detail.css';
+@import './movie-item.css';
+@import './movie-list.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  margin: 5px;
+}
+
+.search-container {
+  width: 50%;
+  margin: 12px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+  top: 5px;
+  background-color: white;
+  justify-content: center;
+}
+
+.search-container>input {
+  width: 75%;
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid #1A1A40;
+  font-weight: bold;
+}
+
+.search-container>button {
+  width: 23%;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 10px;
+  background-color: #1A1A40;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.error-message {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3em;
+  margin-top: 180px;
+
+}
+.not-found {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.pagination {
+  text-align: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.pagination span {
+  color: #1A1A40;
+  margin: 5px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+#page {
+  font-weight: bolder;
+  color: orange;
+  font-size: larger;
+}
+.page-button {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 200px) {
+ 
+  .search-container {
+    width: 100%;
+    font-size: 0.5em;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .search-container>input {
+    font-size: 0.5em;
+  }
+  .search-container>button {
+    font-size: 0.4em;
+    padding: 0 5px;
+    border-radius: 5px;
+  }
+
+  .error-message {
+    font-size: 1em;
+  }
+
+  .pagination span {
+    font-size: 0.75em;
+    padding: 2px;
+    margin: 2px;
+  }
+
+  #page {
+    font-size: medium;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .search-container {
+    width: 85%;
+    font-size: 0.7em;
+  }
+  .search-container>input {
+    font-size: 0.6em;
+  }
+  .search-container>button {
+    font-size: 0.6em;
+    padding: 0 5px;
+    border-radius: 5px;
+  }
+
+}
+
+@media only screen and (min-width: 480px) {
+  .search-container {
+    width: 70%;
+    font-size: 0.7em;
+  }
+
+  .search-container>input {
+    font-size: 0.7em;
+  }
+  .search-container>button {
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search-container {
+    width: 50%;
+    font-size: 1em;
+  }
+
+  .search-container>input {
+    font-size: 0.9em;
+  }
+  .search-container>button {
+    font-size: 0.8em;
+  }
+
+  .pagination span {
+    font-size: 0.9em;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  #page {
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .search-container {
+    width: 70%;
+    font-size: 1.1em;
+  }
+}
